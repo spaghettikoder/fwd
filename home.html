@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            My Portfolio</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                padding: 3px;
+                margin: 1px;
+                background-color: #6911e48b;
+                border: 4px solid white;
+                border-radius: 1%;
+                min-height: 100vh;
+                margin-bottom: 123px;
+            }
+            h1 {
+                padding-left: 5px;
+                text-decoration: underline;
+            }
+            .top-rectangle {
+                width: 100%;
+                height: 200px;
+                background-color: #5a07cec4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .profile-image:hover {
+                transform: scale(1.25);
+                transition: all ease-in-out;
+            }
+            .content, .lists {
+                padding-left: 10px;
+                font-size: 18px;
+            }
+            .bottom-fixed-rectangle {
+                width: 100%;
+                height: 100px;
+                background-color: #5702cdd7;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+                border: 3px solid white;
+                border-radius: 3%;
+            }
+            .bottom-fixed-rectangle h2 {
+                margin: 0;
+                padding: 0;
+            }
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            .social-icons a {
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            .social-icons img {
+                width: 35px;
+                height: 35px;
+            }
+            .social-icons :hover {
+                transform: scale(1.1);
+                transition: all ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top-rectangle">
+            <img src="./images/dark.jpg" alt="profile image" class="profile-image">
+        </div>
+        <h1>
+            Bio:
+        </h1>
+        <div class="content">
+            <p>
+                Highly motivated, creative and skilled student with a passion for competitive programming.
+                Willing to take advantage of my solid problem-solving skills and knowledge to contribute to
+                the development and achievement of innovative and user-friendly applications. Eager to learn
+                and develop in a collaborative and challenging environment.
+            </p>
+        </div>
+        <h1>
+            Projects:
+        </h1>
+        <div class="lists">
+            <ul>
+                <li>Worked on Wordle Game App Using AI to generate and check words (Flutter).</li>
+                <li>Worked on creating Flutter package to provide developers with multi-functional lock screen (pub.dev).</li>
+            </ul>
+        </div>
+        <h1>
+            Achievements:
+        </h1>
+        <div class="lists">
+            <ul>
+                <li>Participated in local and national stages, demonstrating strong problem-solving skills and algorithmic
+                    thinking.</li>
+                <li>Collaborated in a team to solve complex coding problems within time constraints.</li>
+                <li>Implemented efficient and optimized solutions using data structures and algorithms.</li>
+                <li>Participated in many online contests like CodeJam, KICKOFF, and HACKER-CUP.</li>
+            </ul>
+        </div>
+
+        <div class="bottom-fixed-rectangle">
+            <h2>Contact Me</h2>
+            <div class="social-icons">
+                <a id="gh-link" href="https://github.com/spaghettikoder" target="_blank" title="GitHub">
+                    <img src="images/gh.png" alt="GitHub Icon">
+                </a>
+                <a id="tg-link" href="https://t.me/spaghetti_c0der" target="_blank" title="Telegram">
+                    <img src="images/tg.png" alt="Telegram Icon">
+                </a>
+                <a id="email" href="mailto:ammar9mes@gmail.com" title="Email">
+                    <img src="images/em.png" alt="Email Icon">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
