@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>My Comic</title>
+        <script>
+            async function fetchComic() {
+                const email = 'a.meslmani@innopolis.university';
+                const params = new URLSearchParams({email});
+
+                //fetch the id
+                const res = await fetch(`https://fwd.innopolis.university/api/hw2?${params}`);
+                const comic_id = await res.text();
+                
+                //console.log(comic_id)
+
+                //fetch data using the previous id we got
+                const resData = await fetch(`https://fwd.innopolis.university/api/comic?id=${comic_id}`);
+                const comicData = await resData.json();
+                
+                //console.log(comicData)
+
+                //extract the needed attributes
+                const {img, title, day, month, year, alt} = comicData;
+                const date = new Date(year, month - 1, day);
+
+                //display the content by updating the DOM
+                document.getElementById('comic-title').textContent = title;
+                const comicImage = document.getElementById('comic-image');
+                comicImage.src = img;
+                comicImage.alt = alt;
+                document.getElementById('comic-date').textContent = `uploaded on: ${date.toLocaleDateString()}`;
+            }
+
+            fetchComic();
+        </script>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #5a07cec4;
+            }
+            #comic-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #6911e48b;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            #comic-title {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            #comic-image {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+            #comic-date {
+                color: black;
+                font-size: large;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="comic-container">
+            <h3 id="comic-title"></h3>
+            <img id="comic-image">
+            <p id="comic-date"></p>
+        </div>
+    </body>
+</html>
