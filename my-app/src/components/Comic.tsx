@@ -1,4 +1,4 @@
-
+"use client"
 import React, { useEffect, useState } from "react";
 
 interface ComicProps {
@@ -45,7 +45,7 @@ export default function Comic({ email }: ComicProps) {
   const date = new Date(year, month - 1, day);
 
   return (
-    <div id="comic-container">
+    <div className="comic-container">
       <h3 id="comic-title">{title}</h3>
       <img id="comic-image" src={img} alt={alt} />
       <p id="comic-date">uploaded on: {date.toLocaleDateString()}</p>

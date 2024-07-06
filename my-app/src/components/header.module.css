@@ -1,0 +1,55 @@
+/* src/components/header.module.css */
+.headerList {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .headerList li {
+    position: relative;
+  }
+  
+  .headerList li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .headerList li a:hover {
+    color: #ff7f50;
+    transform: scale(1.1);
+  }
+  
+  /* Cool underline effect */
+  .headerList li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ff7f50;
+    transition: width 0.3s ease, right 0.3s ease;
+  }
+  
+  .headerList li a:hover::after {
+    width: 100%;
+    right: 0;
+  }
+  
+  /* Active link */
+  .active a {
+    color: #ff7f50;
+  }
+  
+  .active a::after {
+    width: 100%;
+    right: 0;
+  }
+  
