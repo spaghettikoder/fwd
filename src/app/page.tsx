@@ -1,13 +1,13 @@
 "use client";
-import Head from 'next/head';
-import Achievements from '@/components/Achievements';
-import Bio from '@/components/Bio';
-import Projects from '@/components/Projects';
-import { bioTitle, bioContent, projectTitle, projectList, achievementsTitle, achievementsList } from '@/data/data';
+import Head from "next/head";
+import Achievements from "@/components/Achievements";
+import Bio from "@/components/Bio";
+import Projects from "@/components/Projects";
+import { bioTitle, bioContent, projectTitle, projectList, achievementsTitle, achievementsList } from "@/data/data";
 
 export default function Home() {
   return (
-    <div className='content-page'>
+    <div className="content-page">
       <Head>
         <title>My Personal Website</title>
         <meta name="description" content="This is my personal website where I showcase my bio, projects, and achievements." />

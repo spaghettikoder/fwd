@@ -1,5 +1,5 @@
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
       />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <nav>
-        <ul className='headerList'>
+        <ul className="headerList">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/comic">Comic</Link></li>
         </ul>

@@ -1,6 +1,6 @@
-import React from 'react';
-import Comic from '../../components/Comic';
-import { comicEmail } from '../../data/data';
+import React from "react";
+import Comic from "../../components/Comic";
+import { comicEmail } from "../../data/data";
 
 const fetchComicData = async (email: string) => {
   const params = new URLSearchParams({ email });
