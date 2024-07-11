@@ -9,7 +9,7 @@ const fetchComicData = async (email: string) => {
   const comic_id = await res.text();
 
   const resData = await fetch(
-    `https://fwd.innopolis.university/api/comic?id=${comic_id}`
+    `https://fwd.innopolis.university/api/comic?id=${comic_id}`,
   );
   const comicData = await resData.json();
 

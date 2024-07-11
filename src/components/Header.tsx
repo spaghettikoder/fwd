@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 export default function Header() {
@@ -12,8 +11,12 @@ export default function Header() {
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <nav>
         <ul className="headerList">
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/comic">Comic</Link></li>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/comic">Comic</Link>
+          </li>
         </ul>
       </nav>
     </div>

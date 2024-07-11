@@ -3,8 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Optional: Adds padding around the content */
-  text-align: center; /* Optional: Centers text inside the elements */
+  padding: 20px;
+  /* Optional: Adds padding around the content */
+  text-align: center;
+  /* Optional: Centers text inside the elements */
 }
 
 #root {
@@ -50,7 +52,8 @@ h1 {
   transition: all ease-in-out;
 }
 
-.content, .lists {
+.content,
+.lists {
   padding-left: 10px;
   font-size: 18px;
 }
@@ -65,7 +68,7 @@ h1 {
   position: fixed;
   bottom: 0;
   left: 0;
-  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   border: 3px solid white;
   border-radius: 3%;
 }

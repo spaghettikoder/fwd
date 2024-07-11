@@ -17,10 +17,10 @@ export const githubUrlContact = "https://github.com/spaghettikoder";
 export const telegramUrlContact = "https://t.me/spaghetti_c0der";
 export const emailUrlContact = "mailto:ammar9mes@gmail.com";
 
-export const projectTitle = 'Projects:';
+export const projectTitle = "Projects:";
 export const projectList = [
-  'Worked on Wordle Game App Using AI to generate and check words (Flutter).',
-  'Worked on creating Flutter package to provide developers with multi-functional lock screen (pub.dev).',
-  'This Website which you are surfing now'
+  "Worked on Wordle Game App Using AI to generate and check words (Flutter).",
+  "Worked on creating Flutter package to provide developers with multi-functional lock screen (pub.dev).",
+  "This Website which you are surfing now"
 ];
 
